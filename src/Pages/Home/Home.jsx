@@ -1,9 +1,10 @@
 import React from "react";
+import TopBanner from "./TopBanner/TopBanner";
 
 const Home = () => {
     return (
-        <div className="w-full min-h-screen flex justify-center items-center bg-gradient-to-r from-sky-500 to-indigo-500">
-            <h1 className="">Hello</h1>
+        <div>
+            <TopBanner></TopBanner>
         </div>
     );
 };
