@@ -13,7 +13,7 @@ const Solutions = () => {
                         Explore Solutions
                     </h2>
                     <p className=" text-center text-gray-300 font-light mt-2">
-                        Micro powers the best web3 projects across verticals
+                        Micro powers the best projects across verticals
                     </p>
                 </div>
 
