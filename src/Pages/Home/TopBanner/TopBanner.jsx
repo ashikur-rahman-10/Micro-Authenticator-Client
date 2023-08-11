@@ -3,11 +3,11 @@ import { AiTwotoneThunderbolt } from "react-icons/ai";
 
 const TopBanner = () => {
     return (
-        <div className="w-full min-h-screen flex justify-center items-center">
-            <div className="w-full flex">
-                <div className="space-y-10">
-                    <h1 className="text-white text-6xl font-bold">
-                        The fastest way to build web3 apps.
+        <div className="max-w-6xl mx-auto min-h-screen flex justify-center items-center">
+            <div className="w-full flex gap-10">
+                <div className="space-y-10 w-1/2">
+                    <h1 className="text-white text-5xl font-semibold">
+                        The fastest way to implement authentication system.
                     </h1>
                     <h3 className="text-white text-2xl ">
                         SDKs in every language, smart contracts, tools, and
@@ -20,11 +20,8 @@ const TopBanner = () => {
                         Get Started
                     </button>
                 </div>
-                <div>
-                    <img
-                        src="https://webauthn.guide/dist/images/illi-hero-copy.svg"
-                        alt=""
-                    />
+                <div className="w-1/2">
+                    <img src="https://webauthn.guide/dist/images/illi-hero-copy.svg" />
                 </div>
             </div>
         </div>

@@ -1,14 +1,20 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import NavigationBar from "../Components/NavigationBar/NavigationBar";
+import Footer from "../Components/Footer/Footer";
 
 const Main = () => {
     return (
-        <div className="max-w-6xl mx-auto">
-            <div className="fixed w-full max-w-6xl z-20">
-                <NavigationBar></NavigationBar>
+        <div>
+            <div className=" mx-auto z-20">
+                <div className="fixed w-full ">
+                    <NavigationBar></NavigationBar>
+                </div>
             </div>
-            <Outlet></Outlet>
+            <div>
+                <Outlet></Outlet>
+            </div>
+            <Footer></Footer>
         </div>
     );
 };
