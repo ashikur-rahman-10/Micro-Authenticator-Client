@@ -25,8 +25,8 @@ const NavigationBar = () => {
         </div>
     );
     return (
-        <div>
-            <div className="navbar bg-transparent text-white w-full">
+        <div className="bg-black bg-opacity-40">
+            <div className="navbar  max-w-6xl text-white mx-auto w-full">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
