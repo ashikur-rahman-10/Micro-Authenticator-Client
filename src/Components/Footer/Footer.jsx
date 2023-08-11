@@ -10,8 +10,8 @@ import {
 import { Link } from "react-router-dom";
 const Footer = () => {
     return (
-        <div>
-            <footer className="footer p-10 bg-[#111315] text-[#757575]">
+        <div className="px-20 py-10 bg-[#111315]">
+            <footer className="footer p-10  text-[#757575]">
                 <div>
                     <Link to={"/"}>
                         <img className="h-14" src={logo} alt="" />
