@@ -5,7 +5,7 @@ import useAuth from "../../Hooks/useAuth";
 const NavigationBar = () => {
     const { user } = useAuth();
     const navbarOptions = (
-        <div className="flex lg:flex-row md:items-center uppercase flex-col gap-2">
+        <div className="flex lg:flex-row md:items-center uppercase flex-col gap-2 ">
             <NavLink
                 to={"/"}
                 className="hover:text-blue-400  border-b md:border-none mt-3 md:mt-0 hover:bg-slate-200 hover:bg-opacity-30  py-2 px-3 rounded-xl"
