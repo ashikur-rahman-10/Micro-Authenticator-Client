@@ -6,7 +6,7 @@ import Footer from "../Components/Footer/Footer";
 const Main = () => {
     return (
         <div>
-            <div className=" mx-auto z-20">
+            <div className=" mx-auto z-50">
                 <div className="fixed w-full ">
                     <NavigationBar></NavigationBar>
                 </div>

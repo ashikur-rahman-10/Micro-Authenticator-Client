@@ -1,27 +1,41 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import useAuth from "../../Hooks/useAuth";
 
 const NavigationBar = () => {
+    const { user } = useAuth();
     const navbarOptions = (
-        <div className="flex lg:flex-row md:items-center uppercase  flex-col gap-2">
+        <div className="flex lg:flex-row md:items-center uppercase flex-col gap-2">
             <NavLink
                 to={"/"}
-                className="hover:text-blue-400 border-b md:border-none mt-3 md:mt-0 hover:bg-slate-200 hover:bg-opacity-30  py-2 px-3 rounded-xl"
+                className="hover:text-blue-400  border-b md:border-none mt-3 md:mt-0 hover:bg-slate-200 hover:bg-opacity-30  py-2 px-3 rounded-xl"
             >
                 Products
             </NavLink>
-            <NavLink className="hover:text-blue-400 border-b md:border-none mt-3 md:mt-0 hover:bg-slate-200 hover:bg-opacity-30  py-2 px-3 rounded-xl">
+            <NavLink className="hover:text-blue-400  border-b md:border-none mt-3 md:mt-0 hover:bg-slate-200 hover:bg-opacity-30  py-2 px-3 rounded-xl">
                 Solutions
             </NavLink>
-            <NavLink className="hover:text-blue-400 border-b md:border-none mt-3 md:mt-0 hover:bg-slate-200 hover:bg-opacity-30  py-2 px-3 rounded-xl">
+            <NavLink className="hover:text-blue-400  border-b md:border-none mt-3 md:mt-0 hover:bg-slate-200 hover:bg-opacity-30  py-2 px-3 rounded-xl">
                 Resources
             </NavLink>
-            <NavLink className="hover:text-blue-400 border-b md:border-none mt-3 md:mt-0 hover:bg-slate-200 hover:bg-opacity-30  py-2 px-3 rounded-xl">
+            <NavLink className="hover:text-blue-400  border-b md:border-none mt-3 md:mt-0 hover:bg-slate-200 hover:bg-opacity-30  py-2 px-3 rounded-xl">
                 Docs
             </NavLink>
-            <NavLink className="hover:text-blue-400 border-b md:border-none mt-3 md:mt-0 hover:bg-slate-200 hover:bg-opacity-30  py-2 px-3 rounded-xl">
-                Contact Us
+            <NavLink className="hover:text-blue-400  border-b md:border-none mt-3 md:mt-0 hover:bg-slate-200 hover:bg-opacity-30  py-2 px-3 rounded-xl">
+                Contact
             </NavLink>
+            {!user ? (
+                <NavLink
+                    to={"/login"}
+                    className="hover:text-blue-400  border-b md:border-none mt-3 md:mt-0 hover:bg-slate-200 hover:bg-opacity-30  py-2 px-3 rounded-xl"
+                >
+                    Join
+                </NavLink>
+            ) : (
+                <button className="hover:text-blue-400  border-b md:border-none mt-3 md:mt-0 hover:bg-slate-200 hover:bg-opacity-30  py-2 px-3 rounded-xl">
+                    Logout
+                </button>
+            )}
         </div>
     );
     return (
@@ -52,13 +66,15 @@ const NavigationBar = () => {
                             {navbarOptions}
                         </ul>
                     </div>
-                    <img
-                        className="h-12"
-                        src="/src/assets/logo/logo.svg"
-                        alt=""
-                    />
+                    <Link to={"/"}>
+                        <img
+                            className="h-12"
+                            src="/src/assets/logo/logo.svg"
+                            alt=""
+                        />
+                    </Link>
                 </div>
-                <div className="navbar-end  hidden lg:flex">
+                <div className="w-fit  hidden lg:flex">
                     <ul className="menu menu-horizontal  px-1">
                         {navbarOptions}
                     </ul>
