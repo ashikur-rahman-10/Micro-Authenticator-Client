@@ -5,7 +5,7 @@ const ReviewCart = ({ review }) => {
     const { reviewer_name, review_text, rating } = review;
     return (
         <div className=''>
-            <div className='p-8 border border-violet-950 rounded-xl my-2 text-white'>
+            <div className='p-8 border border-violet-950 rounded-xl my-2 text-white hover:bg-black hover:shadow-2xl hover:shadow-violet-800'>
                 <p className='text-[]'>{review_text}</p>
                 <p className='pt-8 text-[12px] bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent'>Rating: {rating}</p>
 
