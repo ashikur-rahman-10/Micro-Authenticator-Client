@@ -47,6 +47,13 @@ const Review = () => {
                         <h3 className='pt-10'>Micro User</h3>
                     </div>
                 </SwiperSlide>
+                <SwiperSlide>
+                    <div className='lg:mx-40 mb-10 p-8 border border-violet-950 rounded-xl'>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat officia magni omnis ipsum labore nulla suscipit fugit ab harum. Fuga, praesentium sit ipsam sint magnam dolore cumque inventore, quis voluptatum illo tenetur rerum, quidem eveniet ea minima quaerat mollitia? Ut.</p>
+
+                        <h3 className='pt-10'>Micro User</h3>
+                    </div>
+                </SwiperSlide>
 
             </Swiper>
         </div>
