@@ -3,7 +3,12 @@ import { Link, NavLink } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
 
 const NavigationBar = () => {
-    const { user } = useAuth();
+    const { user, logout } = useAuth();
+    const handleLogout = () => {
+        logout()
+            .then((result) => {})
+            .catch((err) => {});
+    };
     const navbarOptions = (
         <div className="flex lg:flex-row md:items-center uppercase flex-col gap-2 ">
             <NavLink
@@ -32,7 +37,10 @@ const NavigationBar = () => {
                     Join
                 </NavLink>
             ) : (
-                <button className="hover:text-blue-400  border-b md:border-none mt-3 md:mt-0 hover:bg-slate-200 hover:bg-opacity-30  py-2 px-3 rounded-xl">
+                <button
+                    onClick={handleLogout}
+                    className="hover:text-blue-400  border-b md:border-none mt-3 md:mt-0 hover:bg-slate-200 hover:bg-opacity-30  py-2 px-3 rounded-xl"
+                >
                     Logout
                 </button>
             )}
