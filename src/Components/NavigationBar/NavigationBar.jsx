@@ -77,7 +77,7 @@ const NavigationBar = () => {
                     <Link to={"/"}>
                         <img
                             className="h-12"
-                            src="/src/assets/logo/logo.svg"
+                            src="https://raw.githubusercontent.com/ashikur-rahman-10/Micro-Authenticator-Client/f93b9d1bee8b6641f12db734c83eec92821e3d0a/src/assets/logo/logo.svg"
                             alt=""
                         />
                     </Link>

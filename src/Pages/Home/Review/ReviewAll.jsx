@@ -9,7 +9,13 @@ const ReviewAll = () => {
             .then((res) => res.json())
             .then((data) => setReview(data));
     }, []);
-    // console.log(reviews);
+
+    // Scroll to top
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+    });
     return (
         <div>
             <div className="pt-28 lg:mx-40 mb-10 ">
