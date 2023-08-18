@@ -3,9 +3,12 @@ import React, { useRef, useState } from 'react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
+
 
 // import './styles.css';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Link } from 'react-router-dom';
 
 const Review = () => {
     return (
@@ -56,6 +59,19 @@ const Review = () => {
                 </SwiperSlide>
 
             </Swiper>
+
+            <div className=' flex gap-5 justify-center'>
+
+                <Link to="/addReview" className=' flex justify-center py-5 '>
+                    <FiArrowLeft className='mt-1 ms-1 text-blue-600' />
+                    <p className='bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent'>Add a review</p>
+                </Link>
+                <Link to="/reviewAll" className=' flex justify-center py-5 '>
+                    <p className='bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent'>View all review</p>
+                    <FiArrowRight className='mt-1 ms-1 text-blue-600' />
+                </Link>
+
+            </div>
         </div>
     );
 };
