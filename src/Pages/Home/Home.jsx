@@ -5,6 +5,7 @@ import BottomBanner from "./BottomBanner/BottomBanner";
 import PrinctingSection from "./PricingSection/PrinctingSection";
 import Subscribe from "./Subcribe/Subscribe";
 import { Helmet } from "react-helmet-async";
+import Review from "./Review/Review";
 
 const Home = () => {
     // Scroll to top
@@ -21,6 +22,7 @@ const Home = () => {
             <TopBanner></TopBanner>
             <PrinctingSection></PrinctingSection>
             <Solutions></Solutions>
+            <Review></Review>
             <BottomBanner></BottomBanner>
             <Subscribe></Subscribe>
         </div>
