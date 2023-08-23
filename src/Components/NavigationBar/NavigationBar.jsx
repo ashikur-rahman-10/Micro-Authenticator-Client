@@ -67,9 +67,12 @@ const NavigationBar = () => {
                                 />
                             </svg>
                         </label>
+
+                        
+                        {/* small screen */}
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 bg-black"
                         >
                             {navbarOptions}
                         </ul>
@@ -82,8 +85,10 @@ const NavigationBar = () => {
                         />
                     </Link>
                 </div>
-                <div className="w-fit  hidden lg:flex">
-                    <ul className="menu menu-horizontal  px-1">
+
+                {/* Big screen */}
+                <div className="w-fit hidden lg:flex ">
+                    <ul className="menu menu-horizontal  px-1 ">
                         {navbarOptions}
                     </ul>
                 </div>

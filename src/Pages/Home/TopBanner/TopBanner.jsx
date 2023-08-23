@@ -6,8 +6,8 @@ const TopBanner = () => {
         <div className="">
             <div className="max-w-6xl mx-auto min-h-screen flex justify-center items-center ">
                 <div className="w-full flex gap-10">
-                    <div className="space-y-10 w-1/2">
-                        <h1 className="text-white text-5xl font-semibold">
+                    <div className="space-y-10 w-1/2 md:ml-20">
+                        <h1 className="text-white text-5xl font-semibold sm:ml-32">
                             The fastest way to implement authentication system.
                         </h1>
                         <h3 className="text-white text-2xl ">
