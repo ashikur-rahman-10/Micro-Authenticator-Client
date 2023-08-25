@@ -15,10 +15,16 @@ const NavigationBar = () => {
                 to={"/"}
                 className="hover:text-blue-400  border-b md:border-none mt-3 md:mt-0 hover:bg-slate-200 hover:bg-opacity-30  py-2 px-3 rounded-xl"
             >
+                Home
+                </NavLink>
+            <NavLink
+                to={"/products"}
+                className="hover:text-blue-400  border-b md:border-none mt-3 md:mt-0 hover:bg-slate-200 hover:bg-opacity-30  py-2 px-3 rounded-xl"
+            >
                 Products
             </NavLink>
-            <NavLink className="hover:text-blue-400  border-b md:border-none mt-3 md:mt-0 hover:bg-slate-200 hover:bg-opacity-30  py-2 px-3 rounded-xl">
-                Solutions
+            <NavLink to={'/book'} className="hover:text-blue-400  border-b md:border-none mt-3 md:mt-0 hover:bg-slate-200 hover:bg-opacity-30  py-2 px-3 rounded-xl">
+                Booked Project
             </NavLink>
             <NavLink className="hover:text-blue-400  border-b md:border-none mt-3 md:mt-0 hover:bg-slate-200 hover:bg-opacity-30  py-2 px-3 rounded-xl">
                 Resources
@@ -47,7 +53,7 @@ const NavigationBar = () => {
         </div>
     );
     return (
-        <div className="bg-black bg-opacity-40">
+        <div className="bg-black z-10 w-full bg-opacity-40 text-white top-0 fixed ">
             <div className="navbar  max-w-6xl text-white mx-auto w-full">
                 <div className="navbar-start">
                     <div className="dropdown">

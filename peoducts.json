@@ -1,0 +1,52 @@
+[
+    {
+        "image": "./public/products/1.jpeg",
+        "name": "HTML CSS",
+        "price": "100$",
+        "duration": "1 Day"
+    },
+    {
+        "image": "./public/products/2.jpeg",
+        "name": "JavaScript",
+        "price": "140$",
+        "duration": "2 Day"
+
+    },
+    {
+        "image": "./public/products/3.jpeg",
+        "name": "MERN Stack",
+        "price": "200$",
+        "duration": "7 Day"
+
+    },
+    {
+        "image": "./public/products/4.jpeg",
+        "name": "C#",
+        "price": "150$",
+        "duration": "5 Day"
+    },
+    {
+        "image": "./public/products/5.jpeg",
+        "name": "C++",
+        "price": "160$",
+        "duration": "6 Day"
+    },
+    {
+        "image": "./public/products/6.jpeg",
+        "name": "PHP",
+        "price": "170$",
+        "duration": "3 Day"
+    },
+    {
+        "image": "./public/products/7.jpeg",
+        "name": "WordPress",
+        "price": "188$",
+        "duration": "4 Day"
+    },
+    {
+        "image": "./public/products/8.png",
+        "name": "Java",
+        "price": "190$",
+        "duration": "6 Day"
+    }
+]

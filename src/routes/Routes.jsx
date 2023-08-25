@@ -5,6 +5,8 @@ import Login from "../Pages/LoginRegister/Login";
 import Register from "../Pages/LoginRegister/Register";
 import ReviewAll from "../Pages/Home/Review/ReviewAll";
 import AddReview from "../Pages/Home/Review/AddReview";
+import Products from "../Components/Products/Products";
+import Booking from "../Components/Booking/Booking";
 const router = createBrowserRouter([
     {
         path: "/",
@@ -29,6 +31,14 @@ const router = createBrowserRouter([
             {
                 path: "addReview",
                 element: <AddReview></AddReview>
+            },
+            {
+                path: "products",
+                element: <Products></Products>
+            },
+            {
+                path: "book",
+                element: <Booking></Booking>
             }
         ],
     },
